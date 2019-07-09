@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <div id="card-2" class="card">
+      <div class="front">
+        <h1>Login</h1>
+        <div class="socialLogin">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-google-plus-square"></i>
+          <i class="fab fa-github-square"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <form class="inputWrapper">
+          <input
+            class="inputField"
+            type="text"
+            name="fname"
+            placeholder="username"
+          /><br />
+          <input
+            class="inputField"
+            type="password"
+            name="lname"
+            placeholder="password"
+          /><br />
+          <input
+            id="registerButton"
+            class="inputButton"
+            type="button"
+            value="Register"
+            onclick="turnToRegister()"
+          />
+          <input class="inputButton" type="submit" value="Login" />
+        </form>
+      </div>
+      <div class="back">
+        <h1>Register</h1>
+        <form class="inputWrapper">
+          <input
+            class="inputField"
+            type="text"
+            name="fname"
+            placeholder="username"
+          /><br />
+          <input
+            class="inputField"
+            type="password"
+            name="lname"
+            placeholder="password"
+          /><br />
+          <input
+            class="inputField"
+            type="password"
+            name="lname"
+            placeholder="repeat password"
+          /><br />
+          <input
+            class="inputField"
+            type="text"
+            name="lname"
+            placeholder="email"
+          /><br />
+          <input
+            class="inputField"
+            type="text"
+            name="lname"
+            placeholder="repeat email"
+          /><br />
+          <input
+            id="registerButton"
+            class="inputButton"
+            type="button"
+            value="Cancel"
+            onclick="turnToLogin()"
+          />
+          <input class="inputButton" type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  </body>
+</html>
